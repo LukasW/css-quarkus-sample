@@ -1,5 +1,25 @@
 # css-quarkus-sample
 
+## AI-Plugins (verbindlich)
+
+Dieses Repository setzt das Plugin `css-baseline@css-plugins` voraus. Es liefert die Skills `arc42-docs` (Architekturdokumentation) und `kafka-event-design` (Kafka-Events und Avro-Schemas). Die Regeln für Coding-Agents stehen in [AGENTS.md](AGENTS.md).
+
+Einmalig pro Arbeitsplatz ausführen:
+
+```shell
+./scripts/setup-ai-plugins.sh
+```
+
+Das Script registriert den Marketplace https://scm.grudligstrasse.ch/css/copilot-plugins für GitHub Copilot CLI und Claude Code, installiert das Plugin und schaltet das Auto-Update ein.
+
+| Datei | Wirkung |
+|-------|---------|
+| `.github/copilot/settings.json` | Copilot CLI: Marketplace bekannt machen und Plugin für dieses Repo aktivieren |
+| `.claude/settings.json` | Claude Code: Marketplace mit `autoUpdate: true` und Plugin aktiviert |
+| `~/.copilot/settings.json` (vom Script gesetzt) | Copilot CLI: `autoUpdate: true`; auf Repo-Ebene wird diese Einstellung von Copilot ignoriert |
+
+Updates werden beim Start einer neuen Session geholt. Manuell: `copilot plugin update css-baseline@css-plugins`.
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.

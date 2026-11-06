@@ -1,0 +1,1 @@
+Die verbindlichen Anweisungen für dieses Repository stehen in `AGENTS.md` im Repo-Root. Insbesondere sind die Skills `arc42-docs` und `kafka-event-design` aus dem Plugin `css-baseline@css-plugins` für Architekturdoku und Kafka-Events zwingend zu verwenden.
