@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "css-plugins": {
+      "source": {
+        "source": "git",
+        "url": "https://scm.grudligstrasse.ch/css/copilot-plugins.git"
+      },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "css-baseline@css-plugins": true
+  }
+}
